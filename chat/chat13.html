@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/131/131449.png"
+    />
+    <link rel="stylesheet" href="chat13_style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <h1>Сервис комментириев со спам фильтром</h1>
+      <div class="main__chat">
+        <div class="chat__entry">
+          <h2>Оставьте ваш комметарий</h2>
+          <form>
+            <p>Показывать Ваше имя?</p>
+            <input
+              type="radio"
+              name="myName"
+              class="main__checkbox1"
+              value="1"
+            />
+            <label for="main__checkbox1"> Да</label>
+
+            <input type="radio" name="myName" id="main__checkbox2" value="2" />
+            <label for="main__checkbox2">Нет </label>
+          </form>
+          <p>Введите ваше имя:</p>
+          <input type="text" class="input__text input" />
+          <p>Введите ссылку вашего аватара:</p>
+          <input type="text" class="input__link input" />
+          <p>Введите сообщение:</p>
+          <textarea class="chat__message input"></textarea>
+        </div>
+        <div class="chat__output">
+          <h2>Чат</h2>
+          <div class="chat__output_name output">
+            <div class="chat__output_link output">
+              <img class="chat__output_img" />
+            </div>
+            <div class="chat__output_init output"></div>
+            <div class="chat__output_date output"></div>
+          </div>
+
+          <div class="chat__output_msg output"></div>
+        </div>
+      </div>
+      <button class="button">Отправить</button>
+    </main>
+    <script src="chat13_script.js"></script>
+  </body>
+</html>
